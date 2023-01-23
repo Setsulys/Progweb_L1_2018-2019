@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://monge.univ-mlv.fr/ens/Licence/L1/2018-2019/progweb/src/td05/exo2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta charset="utf-8">
+   <style>
+     div {
+       margin: 0px;
+       padding: 15px;
+       border: 1px solid black;
+       float: left;
+     }
+	 .black{
+       background-color: black;
+     }
+	 .red{
+       background-color: red;
+     }
+
+   </style>
+   <script>
+     "use strict";
+   
+     function drawCheckerCell(caseNumber) {
+		if (caseNumber % 2 === 1) {
+				document.write('<div class="black"></div>');
+			}
+		else {
+		document.write('<div class="cell"></div>');
+			}
+		}
+		
+	 
+     function drawCheckerLine(n, lineNumber , bool){
+		var i=0;
+		while(i <n) {
+			if (bool) {
+				if (lineNumber === i || lineNumber === n-i-1) {
+					document.write('<div class="red"></div>');
+				} else {
+					drawCheckerCell(i + lineNumber);
+				}
+			} else {
+				drawCheckerCell(i + lineNumber);
+			}
+			
+			i = i + 1;
+	}
+     }
+     function drawCheckerBoard(n, bool){
+		var i;
+		for(i = 0; i < n; i = i + 1) {
+			drawCheckerLine(n, i, bool);
+
+			document.write('<br style="clear: both;">');
+	}
+     }
+   </script>
+ </head>
+ <body>
+  <h2>Damier</h2>
+  <p>
+    Carré de 5x5
+  </p>
+  <script>
+    //drawCheckerCell();
+	drawCheckerBoard(5, true)
+	</script>
+	<p>Carré de 3x3
+	</p>
+	<script>
+    drawCheckerBoard(3, false);
+  </script></div>
+  <!-- p>
+    Carré de 3x3
+  </p>
+  <script>
+    drawCheckerBoard(3);
+  </script -->
+ 
+
+</body></html>

@@ -1,0 +1,21 @@
+
+
+	body{font-family: "Arial", sans-serif;background-color:#C0C0C0}
+	h1{ font-size: 2.4em;}
+	h2{ font-size: 1.8em;}
+	h3{ font-size: 1.6em;}
+	h2{color:blue;}
+	centered{ text-align: center;}
+	div{text-align: right;}
+	A:link {color: red;}
+	A:hover {color: teal;}
+	table { border-collapse: collapse; }
+	table, th, td { border: 1px solid black; }
+	.small-caps{font-variant: small-caps;}
+	.centered{text-align: center;}
+	.centered{text-align: center;}
+	td { padding: 25px; }
+	th { padding: 10px;}
+	tr:nth-child(even) { background-color: rgb(80%,80%,90%); }
+	tr:hover {background-color: rgb(28,125,125);}
+	

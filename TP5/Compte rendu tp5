@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+	<html>
+	<head>
+	   <title>Compte Rendu de TP5 </title>
+	   <meta charset="UTF-8">
+	<style>
+	h2{color:red;}
+	</style>
+	</head>
+
+	<body>
+	<ol>
+	<div><h1> Ly-Ieng Steven/Le Nhat-An</h1></div>
+	<centered><h1> Compte rendu de Tp5 </h1></centered>
+	<h2>Exercice 1: Hello World </h2>
+	<li><h3>il est marqué "premier pas en JavaScript" sur une page web tout simplement.</h3></li>
+	<h3>Pour ouvrir la console avec iceweasel(firefox) il faut lorsqu'on est sur la page appuyer sur F12</h3>
+	<h3>Pour ouvrir la console avec Google chrome il faut lorsqu'on est sur la page appuyer sur F12</h3>
+	<li><h3>Fait</h3></li>
+	<li><h3>Fait</h3></li>
+	<li><h3>Fait</h3></li>
+	</ol>
+	<ol>
+	<h2>Exercice 2: Damier </h2>
+	<li><h3>Le "use strict" permet de ne voir les erreurs dans le code, et encadre l'utilisateur.</h3></li>
+	<li><h3>le "document.write" permet de changer le texte html de la page ici </h3></li>
+	<li><h3>Fait</h3></li>
+	<li><h3>Fait</h3></li>
+	<li><h3>Fait</h3></li>
+	</ol>
+</body>
+</html>

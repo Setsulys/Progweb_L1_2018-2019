@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)http://monge.univ-mlv.fr/ens/Licence/L1/2018-2019/progweb/src/td06/exo1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <script>
+     "use strict";
+	function clear() {
+		var canvas = document.getElementById('clock');
+     var context = canvas.getContext("2d");
+        context.clearRect(0, 0, 600, 600);
+    }
+	
+	function aiguille(longueur, angle) {
+	    var canvas = document.getElementById('clock');
+		var context = canvas.getContext("2d");
+
+		var x = 300 + longueur * (Math.cos(angle));
+		var y = 300 + longueur * (Math.sin(angle));
+		context.beginPath();
+		context.moveTo(300, 300);
+		context.lineTo(x, y);
+		context.stroke();
+	}
+	
+	function horloge(heure,minute,seconde) {
+		var canvas = document.getElementById('clock');
+		var context = canvas.getContext("2d");
+		var angles = 3* Math.PI / 2 + seconde * 2*Math.PI / 60;
+		aiguille(210,angles);
+		var anglem = 3* Math.PI / 2 + minute * 2*Math.PI / 60;
+		aiguille(180,anglem);
+		var angleh = 3* Math.PI / 2 + heure * 2*Math.PI / 12;
+		aiguille(120,angleh);
+		context.beginPath();
+		context.arc(300, 300, 220, 0, 2 * Math.PI);
+		context.stroke();
+    }
+   
+     function refresh() {
+		console.log("tick !");
+		var date = new Date();
+		clear();
+		horloge(date.getHours(),date.getMinutes(),date.getSeconds());
+	   //loaded();
+	   
+	   
+     }
+     
+     function loaded() {
+       //window.setTimeout(refresh, 1000);
+	   window.setInterval(refresh, 1000);
+     }
+	 /* Fait par Nhât-An Le et Steven Ly-Ieng*/
+   </script>
+ </head>
+ <body onload="loaded()">
+  <h2>Horloge</h2>
+  <canvas id="clock" width="600" height="600">
+  </canvas>
+
+</body></html>

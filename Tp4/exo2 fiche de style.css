@@ -1,0 +1,285 @@
+.animal
+{
+	
+	float: left;
+	
+	
+	align-items: center;
+	background-color: black;
+
+
+
+
+	
+	margin:12px;
+	text-align: center;
+	color: white;
+
+
+
+
+}
+.animal img:hover
+
+{
+	opacity: 0.5;
+}
+
+
+.animal img
+{
+	border:1px solid #aaaaaa;
+	padding: 1px;
+}
+
+
+
+.box
+{	
+	float: left;
+	display: inline-block;
+
+}	
+.numero
+{
+	position: relative;
+	bottom: 5px;
+	color: white;
+	text-align: center;
+	
+	padding: 15px;
+	
+
+
+}
+	
+	
+#texte
+{
+	clear: both;
+}
+
+
+
+/*
+
+Exerice 2!!!
+*/
+
+
+
+
+
+.liste-nav
+{
+	float: left;
+	display: inline-block;
+	
+	width: 100%;
+	background-color: purple;
+	height: 50px;
+	border-bottom: 2px solid black;
+}
+
+
+
+.elem-nav
+{
+
+	float: left;
+	display: inline-block;
+
+	padding: 5px;
+	text-align: center;
+	
+	
+	color: green;
+	list-style-type: none;
+	font-weight: bold;
+	font-family: Arial,sans-serif;
+	width:  100px;
+	margin: 10px;
+	color: white;
+	
+
+}
+
+
+
+
+
+
+.elem-about
+{
+	float: right;
+	display: inline-block;
+	
+	padding: 5px;
+	text-align: center;
+	
+	
+	color: green;
+	list-style-type: none;
+	font-weight: bold;
+	font-family: Arial,sans-serif;
+	width:  100px;
+	margin: 10px;
+	color: white;
+}
+
+.elem-web
+{
+	float: left;
+	display: inline-block;
+	
+	padding: 5px;
+	text-align: center;
+
+	
+	color: green;
+	list-style-type: none;
+	font-weight: bold;
+	font-family: Arial,sans-serif;
+	width:  100px;
+	margin: 10px;
+	color: white;
+
+}
+
+.elem-html
+{
+	float: left;
+	display: inline-block;
+	
+	padding: 5px;
+	text-align: center;
+	
+	
+	color: green;
+	list-style-type: none;
+	font-weight: bold;
+	font-family: Arial,sans-serif;
+	width:  100px;
+	margin: 10px;
+	color: white;
+
+}
+
+
+
+
+.sous-menu 
+
+{
+	display: none;
+}
+.sous-menu-html
+
+{
+	display: none;
+}
+
+.sous-menu-css
+
+{
+	display: none;
+}
+
+
+
+
+.elem-web:hover .sous-menu
+{
+	display: block;
+	background-color: grey;
+	color: white;
+
+	text-align: center;
+	border-radius: 11px;
+	box-shadow: 3px 4px 3px teal ;
+	padding: 5px;
+}
+.web:hover
+{
+	background-color: #8A2BE2;
+	border-radius: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+
+
+
+
+}
+
+
+.elem-html:hover
+{
+	background-color: #8A2BE2;
+	border-radius: 10px;
+	
+	
+
+	
+
+
+}
+.elem-nav:hover
+{
+	background-color: #8A2BE2;
+	border-radius: 10px;
+
+	
+
+
+}
+
+.elem-html:hover .sous-menu-html
+{
+	display: block;
+	background-color: grey;
+	color: white;
+
+	text-align: center;
+	border-radius: 11px;
+	box-shadow: 3px 4px 3px teal ;
+	padding: 5px;
+}
+
+
+.elem-nav:hover .sous-menu-css
+{
+	display: block;
+	background-color: grey;
+	color: white;
+
+	text-align: center;
+	border-radius: 11px;
+	box-shadow: 3px 4px 3px teal ;
+	padding: 5px;
+}
+
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color:teal;
+	text-decoration: underline;
+}
+
+
+ 
+
+ul
+{
+	list-style: none;
+
+
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="graph.js" type="text/javascript"></script>
+    <style>
+        div {
+            float: left;
+            padding: 5px 20px 5px 20px;
+        }
+
+    </style>
+    <script>
+        "use strict";
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>Simple Array</h2>
+        <canvas id="graph1" width="500" height="200"></canvas>
+        <script>
+            //1. Le code permet de créer des diagrammes en baton
+            var array = [11, 21, 5, -13, 2, 12, 19, 5];
+            graph('graph1', array);
+
+        </script>
+    </div>
+    <div>
+        <h2>Add 3</h2>
+        <canvas id="graph2" width="500" height="200"></canvas>
+        <script>
+            //TODO
+            var array = [11, 21, 5, -13, 2, 12, 19, 5];
+            graph('graph2', addThree(array));
+
+            function addThree(array) {
+                var array2 = []
+                for (var i = 0; i < array.length; i++) {
+                    array2.push(array[i] + 3);
+                }
+                return array2
+            }
+
+        </script>
+    </div>
+    <div>
+        <h2>Add 3 (using a function)</h2>
+        <canvas id="graph3" width="500" height="200"></canvas>
+        <script>
+            // TODO
+            function applyForEachElement(array, fonction) {
+                var array2 = [];
+                /*array.forEach(e => {
+                    array2.push(fonction(e))
+                });*/
+                array.forEach(function(e) {
+                    array2.push(fonction(e));
+                })
+                return array2;
+            }
+            graph('graph3', applyForEachElement(array, function(e) {
+                return e + 3;
+            }));
+
+        </script>
+    </div>
+    <div>
+        <h2>add 3 (using map())</h2>
+        <canvas id="graph4" width="500" height="200"></canvas>
+        <script>
+            // 4. Il permet de modifier toutes les valeurs du tableau
+            graph('graph4', addThree(array));
+            var array = [11, 21, 5, -13, 2, 12, 19, 5];
+
+            function addThree(array) {
+                var array2 = array.map(function(n) {
+                    return n + 3
+                });
+                return array2
+            }
+
+        </script>
+    </div>
+    <div>
+        <h2>Sorted</h2>
+        <canvas id="graph6" width="500" height="200"></canvas>
+        <script>
+            // 5. Sort permet de trier les valeurs dans l'ordre
+            var array = [11, 21, 5, -13, 2, 12, 19, 5];
+
+            function sortedArray(array) {
+                array.sort(function(a, b) {
+                    return a - b;
+                })
+                return array
+            }
+
+            graph('graph6', sortedArray(array));
+
+        </script>
+    </div>
+    <div>
+        <h2>Filtered</h2>
+        <canvas id="graph5" width="500" height="200"></canvas>
+        <script>
+            var array = [11, 21, 5, -13, 2, 12, 19, 5];
+            
+            function positiveArray(array){
+                array2 = array.filter(function(n) {
+                    return n >= 0
+                })
+                return array2
+            }
+            graph('graph5', positiveArray(array));
+
+        </script>
+    </div>
+</body>
+
+</html>

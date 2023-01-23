@@ -1,0 +1,4 @@
+.box{float: left;background-color: black; margin: 5px; color: white; padding-bottom:25px;text-align: center;}
+.boximg{border-color: silver;border-style: solid}
+.animal{background-color: black; margin: 100px; padding: 20px; float: center;}
+div:hover {opacity:0.5}
